@@ -23,5 +23,6 @@ jobs:
 
       - name: Deploy to Surge
         env:
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: surge ./ https://tu-nombre.surge.sh --token $SURGE_TOKEN
+          SURGE_SECRET_TOKEN: ${{ secrets.SURGE_SECRET_TOKEN }}
+        run: surge ./ https://pagina-electiva2-2025.surge.sh --token $SURGE_SECRET_TOKEN
+
